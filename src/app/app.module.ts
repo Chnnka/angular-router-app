@@ -5,17 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ContactModule } from './contact/contact.module';
+import { ProductsModule } from './products/products.module';
+
 
 @NgModule({
-  
+
   declarations: [
     AppComponent,
     FirstComponent,
-    SecondComponent
+    SecondComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ContactModule,
+    ProductsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
